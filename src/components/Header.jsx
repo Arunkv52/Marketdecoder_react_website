@@ -106,7 +106,7 @@ const Header = () => {
 
               {isDropdownOpen && (
                 <ul className="mt-2 bg-white text-black rounded-md shadow-lg py-2">
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">All Courses</li>
+                  <a href="#Courses"><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">All Courses</li></a>
                   <Link to="/Optionselling"><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Option Selling</li></Link>
                 </ul>
               )}
@@ -114,8 +114,7 @@ const Header = () => {
 
             {/* Other Links */}
             <a href="#instructors" className="block font-semibold hover:text-gray-300">Instructors</a>
-            <a href="/Pages/Contact" className="block font-semibold hover:text-gray-300">Instructors</a>
-            <Link to="../pages/Contact" className="block font-semibold hover:text-gray-300">Contact us</Link>
+            <Link to="/Contact" className="block font-semibold hover:text-gray-300">Contact us</Link>
           </div>
         )}
       </header>
