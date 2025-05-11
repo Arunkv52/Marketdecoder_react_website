@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 const Optionselling = () => {
   return (
     <>
-      <div className='optionsell-all w-[1320px] mx-auto'>
-        <div className='head-item md:flex md:justify-between md:items-center'>
-          <div className='top-logo pt-3 pb-3'>
+      <div className='optionsell-all md:max-w-[1320px] mx-auto'>
+        <div className='head-item flex justify-between items-center md:flex md:justify-between md:items-center'>
+          <div className='top-logo p-5'>
             <Link to='/'>
               <img src={Logo} alt='' className='w-[89px]' />
             </Link>
@@ -20,13 +20,13 @@ const Optionselling = () => {
           </div>
         </div>
 
-        <div className='option-sell md:flex md:flex-wrap'>
-          <div className='w-1/2'>
-            <img src={option} alt='' />
+        <div className='option-sell md:flex md:flex-wrap p-5'>
+          <div className='md:w-1/2'>
+            <img src={option} alt='' className='w-[100%] h-[40%] object-cover md:w-full md:h-[100%] md:object-cover' />
           </div>
-          <div className='w-1/2'>
-            <h5 className='text-3xl mb-4'>PRO Advanced Option Selling</h5>
-            <ul className='list-disc p-3'>
+          <div className='md:w-1/2 p-5'>
+            <h5 className='md:text-3xl text-2xl mb-4'>PRO Advanced Option Selling</h5>
+            <ul className='list-disc p-2'>
               <li>Basic concepts of Call Option &amp; Put Option</li>
               <li>Option History &amp; Terminology</li>
               <li>Pay off graph</li>
